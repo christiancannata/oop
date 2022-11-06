@@ -4,10 +4,13 @@ class Cane
 {
     public $nome;
     public $eta;
+    public $zampe;
 
-    public function __constuct()
+    public function __construct($nome, $eta)
     {
-
+        $this->zampe = 4;
+        $this->nome = $nome;
+        $this->eta = $eta;
     }
 
     public function getNome()
@@ -31,3 +34,15 @@ class Cane
     }
 
 }
+
+
+// setto valori attraverso i setters
+$cane1 = new Cane();
+$cane1->setNome('Pippo');
+$cane1->setEta(3);
+
+// setto valori attraverso il costruttore
+$cane1 = new Cane('Pluto', 3);
+
+
+

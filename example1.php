@@ -6,7 +6,9 @@ class Cane
     public $eta;
     public $zampe;
 
-    public function __construct($nome, $eta)
+
+    //costruttore che contiene attributi opzionali che possiamo dare in fase di istanza
+    public function __construct($nome = null, $eta = null)
     {
         $this->zampe = 4;
         $this->nome = $nome;
@@ -42,7 +44,11 @@ $cane1->setNome('Pippo');
 $cane1->setEta(3);
 
 // setto valori attraverso il costruttore
-$cane1 = new Cane('Pluto', 3);
+$cane2 = new Cane('Pluto', 3);
 
+//stampo i valori dei cani istanziati utilizzando i metodi getters
 
+echo 'Cane 1: ' . $cane1->getNome();
+echo PHP_EOL;
+echo 'Cane 2: ' . $cane2->getNome();
 

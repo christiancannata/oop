@@ -30,5 +30,4 @@ class Cane
         $this->eta = $eta;
     }
 
-
 }
